@@ -267,8 +267,7 @@
       <p class="is-size-7 message-note">System Prompt</p>
     {:else if message.usage}
       <p class="is-size-7 message-note">
-        <em>{getModelDetail(message.model || '').label || message.model || defaultModel}</em> using <span class="has-text-weight-bold">{message.usage.total_tokens}</span>
-        tokens ~= <span class="has-text-weight-bold">${getPrice(message.usage, message.model || defaultModel).toFixed(6)}</span>
+        <em>{getModelDetail(message.model || '').label || message.model || defaultModel}</em> using <span class="has-text-weight-bold">{message.usage.total_tokens}</span> tokens
       </p>
     {/if}
   </div>
